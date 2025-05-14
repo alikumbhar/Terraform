@@ -93,9 +93,6 @@ resource "aws_instance" "my_instance" {
 
 
 
-#agr ap ko neechy wala unknown instance banana hai to ap ko sab s pahely
-#terraform import aws_instance.my_new_instance i-05f7885529adcac4c ye comamnd chalani parhegi ap already bany ho instance ki
-# id laga dena jis ki madad s ap instance ki sary features ki copy krlenge jese vps,keypairs,security groups evrything
 # resource "aws_instance" "my_new_instance" {
 #     ami = "unknown"
 #     instance_type = "unknown"
