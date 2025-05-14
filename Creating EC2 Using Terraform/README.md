@@ -22,13 +22,16 @@ You’ll be prompted to enter:
 Step 3: Verify the Configuration
 
 Run:
-2. aws configure list
-
-3. Test the Configuration
+```bash
+ aws configure list
+``
+Test the Configuration
 
 Try running a simple AWS CLI command, like listing S3 buckets:
 
-aws s3 ls
+```bash
+ aws s3 ls
+``
 
 if this return 
 
@@ -39,7 +42,9 @@ Back to terraform and run some commands
 
 
 1. terraform init to initialize and load aws detail
-
+```bash
+ terraform init
+``
 Purpose: Prepares your working directory for use with Terraform.
 
 Details:
@@ -50,7 +55,10 @@ Details:
 
 
  2. Create an Execution Plan
-    Purpose:
+```bash
+ terraform plan
+``
+  Purpose:
 
 Shows what Terraform intends to do based on your configuration — it’s a dry run.
 
@@ -61,7 +69,9 @@ What it does:
 
 
 3. terraform apply
-
+```bash
+ terraform apply
+``
 Purpose:
 
 Executes the changes required to reach the desired state of the configuration.
@@ -72,8 +82,10 @@ What it does:
 	•	Modifies the state file to reflect the new real-world infrastructure.
 
 
- Terraform apply
 
+```bash
  terraform apply -auto-approve
+``
+
 
  
