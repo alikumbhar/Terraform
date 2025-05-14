@@ -1,7 +1,7 @@
 
 # Creating EC2 Instance Using Terraform
 
-### for running this instance you need to change 
+for running this instance you need to change 
 value in variables
 
 
