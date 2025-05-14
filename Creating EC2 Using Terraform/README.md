@@ -1,16 +1,16 @@
 
-#Creating EC2 Instance Using Terraform
+# Creating EC2 Instance Using Terraform
 
-###for running this instance you need to change 
+### for running this instance you need to change 
 value in variables
 
 
 after changing variable value execute these commands
-##Configure the AWS CLI
+## Configure the AWS CLI
 first you need to make sure that you have AWS CLI installed or not
 
 
-##after installing AWS CLI
+## after installing AWS CLI
 1. aws configure
 
 You’ll be prompted to enter:
@@ -24,14 +24,14 @@ Step 3: Verify the Configuration
 Run:
 ```bash
  aws configure list
-``
+```
 Test the Configuration
 
 Try running a simple AWS CLI command, like listing S3 buckets:
 
 ```bash
- aws s3 ls
-``
+aws s3 ls
+```
 
 if this return 
 
@@ -44,7 +44,7 @@ Back to terraform and run some commands
 1. terraform init to initialize and load aws detail
 ```bash
  terraform init
-``
+```
 Purpose: Prepares your working directory for use with Terraform.
 
 Details:
@@ -57,7 +57,7 @@ Details:
  2. Create an Execution Plan
 ```bash
  terraform plan
-``
+```
   Purpose:
 
 Shows what Terraform intends to do based on your configuration — it’s a dry run.
@@ -70,8 +70,8 @@ What it does:
 
 3. terraform apply
 ```bash
- terraform apply
-``
+terraform apply
+```
 Purpose:
 
 Executes the changes required to reach the desired state of the configuration.
@@ -85,7 +85,7 @@ What it does:
 
 ```bash
  terraform apply -auto-approve
-``
+```
 
 
  
